@@ -1,11 +1,12 @@
-Nama                    : Meylani
-NIM                     : 2400016012
-Semester                : IV
-Kelas Praktikum         : C
-Mata Kuliah Praktikum   : Teknologi Mobile
+Nama                    : Meylani  
+NIM                     : 2400016012  
+Semester                : IV  
+Kelas Praktikum         : C  
+Mata Kuliah Praktikum   : Teknologi Mobile  
 
 # Meylani Pet Care
-Meylani Pet Care adalah aplikasi Flutter sederhana yang dibuat untuk memenuhi tugas **Praktikum 2 Teknologi Mobile**. Aplikasi ini menerapkan konsep dasar Flutter, yaitu penggunaan widget, navigasi antar halaman, `StatelessWidget`, `StatefulWidget`, dan `setState()`.
+
+**Meylani Pet Care** adalah aplikasi Flutter sederhana yang dibuat untuk memenuhi tugas **Praktikum 2 Teknologi Mobile**. Aplikasi ini menerapkan konsep dasar Flutter, yaitu penggunaan widget, navigasi antar halaman, `StatelessWidget`, `StatefulWidget`, dan `setState()`.
 
 ## Deskripsi Aplikasi
 
@@ -67,52 +68,57 @@ lib/
 └── pages/
     ├── stateless_page.dart
     └── stateful_page.dart
+```
 
 ## Analisis Widget
 
 ### Analisis Widget pada Stateless Page / Pet Profile
 
-| Widget | Analisis |
-|---|---|
-| `Scaffold` | `Scaffold` digunakan sebagai kerangka utama halaman Pet Profile agar halaman memiliki struktur seperti `AppBar` dan `body`. |
-| `AppBar` | `AppBar` digunakan untuk menampilkan judul Pet Profile di bagian atas aplikasi. |
-| `SingleChildScrollView` | `SingleChildScrollView` digunakan agar seluruh data pet dan tips merawat tetap bisa dilihat dengan cara digulir. |
-| `Padding` | `Padding` digunakan untuk memberi jarak pada isi halaman agar tampilan data pet tidak menempel ke tepi layar. |
-| `Column` | `Column` digunakan untuk menyusun bagian profil pet, daftar data pet, tips merawat, dan tombol kembali secara vertikal. |
-| `Container` | `Container` digunakan untuk membungkus bagian profil, item data pet, dan tips agar dapat diberi padding, warna latar, border radius, dan bayangan. |
-| `BoxDecoration` | `BoxDecoration` digunakan untuk menghias `Container`, seperti memberi warna putih, gradasi, border radius, dan bayangan pada kartu informasi pet. |
-| `LinearGradient` | `LinearGradient` digunakan untuk memberi efek gradasi warna pada bagian header Mochi si Pet Virtual. |
-| `CircleAvatar` | `CircleAvatar` digunakan untuk menampilkan ikon pet dalam bentuk lingkaran pada bagian profil dan item informasi. |
-| `Icon` | `Icon` digunakan untuk menampilkan simbol data pet, seperti ikon nama, jenis, makanan, sifat, dan tanda centang pada tips. |
-| `Text` | `Text` digunakan untuk menampilkan data statis seperti Mochi si Pet Virtual, nama pet, jenis pet, makanan favorit, sifat pet, dan tips merawat. |
-| `SizedBox` | `SizedBox` digunakan untuk memberi jarak antar elemen, seperti jarak antara ikon, teks, kartu data, dan tombol. |
-| `Row` | `Row` digunakan untuk menyusun ikon dan teks data pet secara horizontal dalam satu baris. |
-| `Expanded` | `Expanded` digunakan agar teks data pet dan tips dapat menyesuaikan lebar layar tanpa keluar dari tampilan. |
-| `ElevatedButton.icon` | `ElevatedButton.icon` digunakan sebagai tombol kembali ke halaman utama dengan ikon panah dan teks. |
-| `Border` | `Border` digunakan untuk memberi garis tepi pada kotak tips agar bagian tips terlihat lebih jelas. |
+Berikut adalah beberapa widget yang digunakan pada halaman **Pet Profile**:
+
+| No | Widget | Analisis |
+|---|---|---|
+| 1 | `Scaffold` | Digunakan sebagai kerangka utama halaman agar memiliki struktur seperti `AppBar` dan `body`. |
+| 2 | `AppBar` | Digunakan untuk menampilkan judul halaman Pet Profile di bagian atas aplikasi. |
+| 3 | `SingleChildScrollView` | Digunakan agar seluruh isi halaman tetap dapat dilihat dengan cara digulir ketika konten melebihi ukuran layar. |
+| 4 | `Padding` | Digunakan untuk memberi jarak pada isi halaman agar tidak menempel ke tepi layar. |
+| 5 | `Column` | Digunakan untuk menyusun bagian profil pet, data pet, tips merawat, dan tombol kembali secara vertikal. |
+| 6 | `Container` | Digunakan untuk membungkus bagian tertentu seperti profil, data pet, dan tips agar dapat diberi dekorasi. |
+| 7 | `BoxDecoration` | Digunakan untuk memberi hiasan pada `Container`, seperti warna latar, gradasi, border radius, dan bayangan. |
+| 8 | `LinearGradient` | Digunakan untuk memberikan efek gradasi warna pada bagian header profil pet. |
+| 9 | `CircleAvatar` | Digunakan untuk menampilkan ikon pet dalam bentuk lingkaran agar tampilan lebih menarik. |
+| 10 | `Icon` | Digunakan untuk menampilkan simbol visual seperti ikon nama, jenis pet, makanan favorit, sifat pet, dan tips. |
+| 11 | `Text` | Digunakan untuk menampilkan teks statis seperti nama pet, jenis pet, makanan favorit, sifat, dan tips merawat. |
+| 12 | `SizedBox` | Digunakan untuk memberi jarak antar widget agar tampilan tidak terlalu rapat. |
+| 13 | `Row` | Digunakan untuk menyusun ikon dan teks data pet secara horizontal dalam satu baris. |
+| 14 | `Expanded` | Digunakan agar teks dapat menyesuaikan lebar layar dan tidak keluar dari tampilan. |
+| 15 | `ElevatedButton.icon` | Digunakan untuk membuat tombol kembali ke halaman utama yang memiliki ikon dan teks. |
+| 16 | `Border` | Digunakan untuk memberi garis tepi pada bagian tips agar terlihat lebih jelas. |
 
 ### Analisis Widget pada Stateful Page / Happiness Counter
 
-| Widget | Analisis |
-|---|---|
-| `Scaffold` | `Scaffold` digunakan sebagai kerangka utama halaman agar halaman memiliki struktur seperti `AppBar` dan `body`. |
-| `AppBar` | `AppBar` digunakan untuk menampilkan judul halaman di bagian atas aplikasi. |
-| `SingleChildScrollView` | `SingleChildScrollView` digunakan agar halaman dapat digulir ketika isi halaman melebihi ukuran layar. |
-| `Padding` | `Padding` digunakan untuk memberikan jarak di sekitar widget agar tampilan tidak terlalu menempel ke tepi layar. |
-| `Column` | `Column` digunakan untuk menyusun widget secara vertikal dari atas ke bawah. |
-| `Container` | `Container` digunakan untuk membungkus widget lain agar dapat diberikan padding, warna latar, border radius, dan dekorasi lainnya. |
-| `BoxDecoration` | `BoxDecoration` digunakan untuk memberikan dekorasi pada `Container`, seperti warna, gradasi, bayangan, dan bentuk lingkaran. |
-| `LinearGradient` | `LinearGradient` digunakan untuk memberikan efek warna gradasi pada bagian header halaman. |
-| `CircleAvatar` | `CircleAvatar` digunakan untuk menampilkan ikon pet dalam bentuk lingkaran agar tampilan lebih menarik. |
-| `Icon` | `Icon` digunakan untuk menampilkan simbol visual seperti ikon pet, makanan, game, reset, dan ekspresi kebahagiaan. |
-| `Text` | `Text` digunakan untuk menampilkan tulisan dan angka seperti judul, deskripsi, level kebahagiaan, nilai happiness, dan status pet. |
-| `SizedBox` | `SizedBox` digunakan untuk memberikan jarak antar widget agar tampilan tidak terlalu rapat. |
-| `Row` | `Row` digunakan untuk menyusun tombol Beri Makan dan Ajak Main secara horizontal. |
-| `Expanded` | `Expanded` digunakan agar tombol di dalam `Row` memiliki ukuran yang seimbang dan menyesuaikan lebar layar. |
-| `ElevatedButton.icon` | `ElevatedButton.icon` digunakan untuk membuat tombol dengan ikon dan teks, seperti tombol Beri Makan, Ajak Main, dan tombol kembali. |
-| `OutlinedButton.icon` | `OutlinedButton.icon` digunakan untuk membuat tombol Reset Happiness dengan tampilan garis tepi agar berbeda dari tombol utama. |
-| `Center` | `Center` digunakan untuk menempatkan angka happiness tepat di tengah lingkaran. |
-| `Border` | `Border` digunakan untuk memberikan garis tepi pada lingkaran level kebahagiaan agar bentuknya lebih jelas. |
+Berikut adalah beberapa widget yang digunakan pada halaman **Happiness Counter**:
+
+| No | Widget | Analisis |
+|---|---|---|
+| 1 | `Scaffold` | Digunakan sebagai kerangka utama halaman agar memiliki struktur seperti `AppBar` dan `body`. |
+| 2 | `AppBar` | Digunakan untuk menampilkan judul halaman Happiness Counter di bagian atas aplikasi. |
+| 3 | `SingleChildScrollView` | Digunakan agar halaman dapat digulir ketika isi halaman melebihi ukuran layar. |
+| 4 | `Padding` | Digunakan untuk memberikan jarak di sekitar isi halaman agar tampilan lebih rapi. |
+| 5 | `Column` | Digunakan untuk menyusun widget secara vertikal dari atas ke bawah. |
+| 6 | `Container` | Digunakan untuk membungkus widget lain agar dapat diberi padding, warna latar, border radius, dan dekorasi. |
+| 7 | `BoxDecoration` | Digunakan untuk memberikan dekorasi pada `Container`, seperti warna, gradasi, bayangan, dan bentuk lingkaran. |
+| 8 | `LinearGradient` | Digunakan untuk memberikan efek warna gradasi pada bagian header halaman. |
+| 9 | `CircleAvatar` | Digunakan untuk menampilkan ikon pet dalam bentuk lingkaran agar tampilan lebih menarik. |
+| 10 | `Icon` | Digunakan untuk menampilkan simbol visual seperti ikon pet, makanan, permainan, reset, dan ekspresi kebahagiaan. |
+| 11 | `Text` | Digunakan untuk menampilkan judul, deskripsi, level kebahagiaan, nilai happiness, dan status pet. |
+| 12 | `SizedBox` | Digunakan untuk memberikan jarak antar widget agar tampilan tidak terlalu rapat. |
+| 13 | `Row` | Digunakan untuk menyusun tombol Beri Makan dan Ajak Main secara horizontal. |
+| 14 | `Expanded` | Digunakan agar tombol di dalam `Row` memiliki ukuran yang seimbang dan menyesuaikan lebar layar. |
+| 15 | `ElevatedButton.icon` | Digunakan untuk membuat tombol dengan ikon dan teks, seperti tombol Beri Makan, Ajak Main, dan kembali. |
+| 16 | `OutlinedButton.icon` | Digunakan untuk membuat tombol Reset Happiness dengan tampilan garis tepi agar berbeda dari tombol utama. |
+| 17 | `Center` | Digunakan untuk menempatkan angka happiness tepat di tengah lingkaran. |
+| 18 | `Border` | Digunakan untuk memberikan garis tepi pada lingkaran level kebahagiaan agar bentuknya lebih jelas. |
 
 ## Perbedaan Stateless Page dan Stateful Page
 
@@ -122,3 +128,11 @@ lib/
 | Tidak memakai `setState()` | Memakai `setState()` |
 | Tidak ada perubahan UI saat tombol ditekan, kecuali kembali halaman | Ada perubahan angka, status, dan ikon ekspresi |
 | Fokus pada informasi pet | Fokus pada interaksi merawat pet |
+
+## Kesimpulan
+
+Aplikasi **Meylani Pet Care** dibuat untuk memahami penggunaan widget dasar pada Flutter serta perbedaan antara `StatelessWidget` dan `StatefulWidget`.
+
+Halaman **Pet Profile** menggunakan `StatelessWidget` karena data yang ditampilkan bersifat tetap. Sedangkan halaman **Happiness Counter** menggunakan `StatefulWidget` karena terdapat data `happiness` yang dapat berubah ketika pengguna menekan tombol.
+
+Dengan aplikasi ini, konsep navigasi halaman, penggunaan widget, dan perubahan tampilan menggunakan `setState()` dapat dipahami dengan lebih mudah.
